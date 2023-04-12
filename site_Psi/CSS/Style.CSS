@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 13px;
+    background: rgb(0, 221, 255);
+    line-height: 1px;
+    font-size: 10pt;
+    position: relative;
+}
+header h2{
+    margin-left: 19.7%;
+    color: whitesmoke;
+}
+header h1{
+    margin-top: 0.5%;
+}
+
+nav1 ul{
+    list-style-type: none;
+    margin-left: 50%;
+    position: absolute; top: 2%; left: 20%;
+    display: flex;
+    
+}
+
+nav1 a:hover {
+    color:rgb(15, 15, 15);
+    background: white;
+}
+
+nav2 ul{
+    list-style-type: none;
+    margin: auto;
+    position: absolute; top: 16.5%;
+    display: flex;
+    background-color: palevioletred;
+    width: 100%;
+    
+}
+nav2 a:hover {
+    color:rgb(15, 15, 15);
+    background: white;
+}
+
+.a{
+    color: black;
+    text-decoration: none;
+    float: left;
+    padding: 10px;
+
+}
+
+body{
+    width: 100%; 
+    margin-top: auto;
+    margin-left: auto;
+}
