@@ -40,7 +40,7 @@ nav1 a:hover {
 nav2 ul{
     list-style-type: none;
     margin: auto;
-    position: absolute; top: 16%;
+    position: absolute; top: 12%;
     display: flex;
     background-color: palevioletred;
     width: 100%;
