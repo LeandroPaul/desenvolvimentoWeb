@@ -1,0 +1,19 @@
+table{
+    caption-side: bottom;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: thin solid black;
+
+}
+
+caption{
+    font-family: verdana;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+td{
+    border: 1px solid navy;
+    background: #ccc;
+}
+
