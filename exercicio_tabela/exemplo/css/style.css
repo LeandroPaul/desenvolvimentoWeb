@@ -1,0 +1,35 @@
+table{
+    caption-side: bottom;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    border-collapse: collapse;
+}
+
+caption{
+    font-family: verdana;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+td{
+    border-bottom: 1px solid navy;
+    padding: 5px;
+}
+.alinhamento_direita{
+    text-align: right;
+}
+.alinhamento_centro{
+    text-align: center;
+}
+.th{
+    
+    height: 30px;
+    border-bottom: 1px solid navy;
+    background-color: #04AA6D;
+    color: white;
+}
+
+

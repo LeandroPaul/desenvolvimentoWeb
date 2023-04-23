@@ -1,0 +1,29 @@
+table{
+    caption-side: bottom;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 60%;
+    position: absolute;
+    left: 25%;
+    font-family: verdana;
+    font-size: 12px;
+}
+
+caption{
+    font-family: verdana;
+    font-size: 15px;
+    text-decoration: underline;
+    color: rgb(192, 27, 27);
+}
+
+td{
+    
+    background-color: darkseagreen;
+    padding: 15px;
+    border: 0.5% solid white;
+    color: blue;
+}
+
+
+
+
