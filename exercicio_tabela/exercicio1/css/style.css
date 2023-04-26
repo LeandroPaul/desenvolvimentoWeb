@@ -1,10 +1,8 @@
 table{
     caption-side: bottom;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
     width: 60%;
-    position: absolute;
-    left: 25%;
     font-family: verdana;
     font-size: 12px;
 }

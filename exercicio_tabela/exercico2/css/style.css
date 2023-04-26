@@ -1,10 +1,8 @@
 table{
     caption-side: bottom;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
     width: 60%;
-    position: absolute;
-    left: 25%;
     font-family: verdana;
     font-size: 12px;
     border-collapse: collapse;
@@ -19,16 +17,15 @@ caption{
 }
 
 td{
-    background-color: #cc6600;
+   
     padding: 10px;
 }
 
-tr:nth-child(odd) {background-color: #f2f2f2;}
-
+tr:nth-child(even) {background-color: khaki;}
 
 
 th{
-    background-color: #04AA6D;
+    background-color: #cc6600;
     padding: 10px;
 }
 
