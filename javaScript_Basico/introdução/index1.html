@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Produto</title>
+  <script src="exemplo4.js">  
+
+</script>
+</head>
+<body>
+  <h1>Calcula expressão matemática</h1>
+ <form  method="get"  onsubmit="limparCampos()" > 
+      <p>
+        <label>Produto</label>
+        <input type="text" name="prod" id="iprod">
+      </p>
+      <p>
+        <label>Preço</label>
+        <input type="text" name="preco" id="ipreco">
+      </p>    
+      <p>
+        <label>Quantidade: </label>
+        <input type="number" name="quant" id="iquant">
+      </p> 
+      <p>
+        <label>Total: R$</label>
+        <output name="tot" id="itot">0</output>
+      </p>         
+      <p>
+
+        </p>    
+        
+        <input type="submit" value="Limpar Campos">       
+  </form>
+  
+  <button onclick="calculaResultado()">resultado</button>
+</body>
+</html>
