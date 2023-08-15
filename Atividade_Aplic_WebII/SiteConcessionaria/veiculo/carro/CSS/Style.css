@@ -11,6 +11,15 @@ h1{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
+h3{
+    font-size: 35px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    position: relative;
+    display: flex;
+    left: 70px;
+    bottom: 5px;
+}
 .top{
     position: relative;
     display: flex;
@@ -85,7 +94,7 @@ button:active {
 }
 nav{
     text-align: center;
-  justify-content: center;
+    justify-content: center;
     position: relative;
     background: rgb(227, 227, 227);
     width: 100%;
@@ -114,15 +123,29 @@ p{
     text-align: center;
 }
 footer{
-
     position: relative;
     background-color:crimson;
     padding: 5px;
-    bottom: 50%;
 }
-a:link, a:visited,  a:hover, a:active
-{
-    color: #13527d;
-    text-decoration: none;
+.imgferrari{
+    position: absolute;
+    display: flex;
+    top: 20%;
+   
 }
+.imgbmw{
+    position: absolute;
+    display: flex;
+    top: 40%;
+   
+}
+section{
+    justify-content: center;
+    display: flex;
+    position: relative;
+    background: rgb(227, 227, 227);
+    width: 100%;
+    padding: 35% 0px 35% 0px;
+}
+
 
