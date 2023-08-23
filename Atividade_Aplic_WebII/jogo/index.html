@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jogo do Palpite</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+        <h1>Jogo do Palpite</h1>
+        <p>Temos um número de 1 a 100. Tente adivinhó-lo !</p>
+        <div class="form">
+            <label for="guessField">Digite um número</label>
+            <input type="number" min="1" max="100" required id="guessField">
+            <input type="submit" value="Enviar" class="guessSubmit">
+        </div>
+        <div class="results">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHigh"></p>
+        </div>
+       
+        <script>
+            const guesses = document.querysSelect('#guesses');
+            const lastResult = document.querysSelect('.lastResult');
+            const lowOrHigh = document.querysSelect('.lowOrHigh');
+
+            const guessField = document.querysSelect('.guessField');
+            const guessSubmit = document.querysSelect('.guessSubmit');
+            
+            let resetButton;
+            let guessCount = 1;
+            let randomNumber = Math.floor(Math.random()*100)+1;
+
+            function checkGuess(){
+                const userGuess = Number(guessSubmit.value);
+                if(guessCount === 1){
+                    guesses.textContent = 'Palpites Anteriores: ';
+                }
+                guesses.textContent += userGuess + ' ';
+                if(userGuess === randomNumber){
+                    lastResult.textContent = 'Você acertou !!!';
+                    lastResult.style.setBackgroundColor = 'green';
+                    lowOrHigh.textContent = ' ';
+                    setGameOver();
+                } else if(guessCount === 5){
+                    lastResult.textContent = 'Estourou Palpite !!!';
+                    lastResult.style.setBackgroundColor = 'red';
+                    lowOrHigh.textContent = ' ';
+                    setGameOver();
+                } else{
+                    lastResult.textContent = 'Errou!!!';
+                    lastResult.style.setBackgroundColor = 'yellow';
+                    if(userGuess<randomNumber){
+                        lowOrHigh.textContent = 'palpite baixo! Eleve o chute'
+                    }
+                    else if(userGuess>randomNumber){
+                        lowOrHigh.textContent = 'Palpite Alto! Diminua o numero'
+                    }
+                }
+                guessCount++;
+                guessField.value='';
+                guessField.focus();
+            }
+
+            guessSubmit.addEventListener('click', checkGuess);
+
+
+
+            function setGameOver(){
+                guessSubmit.disabled = true;
+                guessField.disabled = true;
+                resetButton = document.createElement('button');
+                resetButton.textContent = 'Novo Jogo';
+                document.body.appendChild(resetButton);
+                resetButton.addEventListener('click', resetGame);
+
+            }
+            function resetGame(){
+                guessCount = 1;
+                guesses.textContent='';
+                lastResult.textContent='';
+                lowOrHigh.textContent='';
+
+                guessSubmit.disabled = false;
+                guessField.disabled = false;
+
+                resetButton.parentNode.removeChild(resetButton);
+                guessField.value='';
+                guessField.focus();
+                lastResult.style.backgroundColor = 'white';
+                randomNumber = Math.floor(Math.random() * 100) + 1;
+                
+            }
+        </script>
+            
+        
+    
+    
+</body>
+</html>
