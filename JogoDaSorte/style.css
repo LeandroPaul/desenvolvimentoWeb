@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 22px;
+    width: 100%;
+}
+
+.container{
+    
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 25%;
+    margin-bottom: 15%;
+    background-color: aqua;
+    width: 40%;
+    padding: 90px;
+    
+    
+}
+
+.enviar{
+    margin-top: 10px;
+}
+
+.entrada{
+    border:  1.5px solid black ;
+    width: 50px;
+}
+.resultado{
+    display: inline-block;
+    padding: 20% 45% 20% 45%;
+    
+    background-color: rgb(234, 225, 225);
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    border:  1.5px solid black ;
+}
