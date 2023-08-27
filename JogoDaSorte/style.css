@@ -25,8 +25,8 @@ body{
 }
 
 .entrada{
-    border:  1.5px solid black ;
-    width: 50px;
+    border:  1px solid black ;
+    width: 70px;
 }
 .resultado{
     display: inline-block;
