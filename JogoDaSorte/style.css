@@ -30,12 +30,14 @@ body{
 }
 .resultado{
     display: inline-block;
-    padding: 20% 45% 20% 45%;
+    width: 500px;
+    height: 250px;
     
     background-color: rgb(234, 225, 225);
     justify-content: center;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
+    padding-left: 20px;
     border-radius: 10px;
     border:  1.5px solid black ;
 }
