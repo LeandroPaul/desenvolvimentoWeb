@@ -10,12 +10,15 @@
 <body>
     <div class="container">
         <div class="inicial">
-            <p>Informe um número entre 1 e 100, que você acha que é o número sorteado!</p>
+            <p>Informe um número entre 1 e 100, que você acha que é o número premiado!</p>
             <input class="entrada" type="number" max="100" min="1" id="entrada">
         </div>
         <div class="enviar"><button id="enviar" type="submit" onclick="enviar()">Enviar</button></div>
         <div class="resultado">
-            <p id="resultado"></p>
+            <p id="errou"></p>
+            <p id="acertou"></p>
+            <p id="maior"></p>
+            <p id="menor"></p>
         </div>
     </div>
     <script src="index.js"></script>
