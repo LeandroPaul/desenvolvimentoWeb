@@ -10,6 +10,7 @@ function enviar() {
         if (palpite.value > 0) {
 
                 if (palpite.value < num) {
+                        document.getElementById('errou').style.fontFamily="Vedana";
                         document.getElementById('maior').innerHTML = '';
                         document.getElementById('acertou').innerHTML = '';
                         const linha1 = "Palpite do Jogador: ";
@@ -33,19 +34,20 @@ function enviar() {
                         errouElement.classList.add('texto-vermelho');
 
                         const menorElement = document.getElementById('menor');
-                        menorElement.innerHTML = "Digite um palpite MAIOR que " + digitado + " e MENOR que 63.";
+                        menorElement.innerHTML = "DICA: Digite um palpite MAIOR que " + digitado + " e MENOR que 63.";
 
                         // Adicione a classe CSS para tornar o texto vermelho
                         menorElement.classList.add('texto-amarelo');
 
                         // Adicionei um som ao errar palpite
-                        var audio = new Audio('faustao-errou.mp3');
+                        var audio = new Audio('som/faustao-errou.mp3');
                         audio.addEventListener('canplaythrough', function () {
                                 audio.play();
                         });
                 }
 
                 if (palpite.value == num) {
+                        document.getElementById('acertou').style.fontFamily="Vedana";
                         document.getElementById('menor').innerHTML = '';
                         document.getElementById('maior').innerHTML = '';
                         document.getElementById('errou').innerHTML = '';
@@ -69,7 +71,7 @@ function enviar() {
                         acertouElement.classList.add('texto-verde');
 
                         // Adicionei um som ao errar palpite
-                        var audio = new Audio('aplausos.mp3');
+                        var audio = new Audio('som/aplausos.mp3');
                         audio.addEventListener('canplaythrough', function () {
                                 audio.play();
                         });
@@ -79,6 +81,7 @@ function enviar() {
 
                 if (palpite.value > num) {
                         // Limpe os elementos de feedback de outros casos
+                        document.getElementById('maior').style.fontFamily="Vedana";
                         document.getElementById('menor').innerHTML = '';
                         document.getElementById('acertou').innerHTML = '';
 
@@ -104,13 +107,13 @@ function enviar() {
                         errouElement.classList.add('texto-vermelho');
 
                         const maiorElement = document.getElementById('maior');
-                        maiorElement.innerHTML = "Digite um palpite Menor que " + digitado + " e Maior que 60.";
+                        maiorElement.innerHTML = "DICA: Digite um palpite Menor que " + digitado + " e Maior que 60.";
 
                         // Adicione a classe CSS para tornar o texto amarelo
                         maiorElement.classList.add('texto-amarelo');
 
                         // Adicionei um som ao acertar palpite
-                        var audio = new Audio('faustao-errou.mp3');
+                        var audio = new Audio('som/faustao-errou.mp3');
                         audio.addEventListener('canplaythrough', function () {
                                 audio.play();
                         });
